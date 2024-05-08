@@ -15,7 +15,7 @@ get_header();?>
 
 		</header>
 
-		 <div class="alv center-content">
+		 <!-- <div class="alv center-content">
 			<div class="alv-datum">
 				<h1>23</h1>
 				<h2>april</h2>
@@ -42,7 +42,7 @@ get_header();?>
 			.alv-datum > * {
 			    margin: 0px;
 			}
-		</style>
+		</style> -->
 
 		<section>
 
