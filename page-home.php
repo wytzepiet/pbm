@@ -111,7 +111,11 @@ get_header();?>
 						while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
 						<div style=" width: 150px;">
-							<span class="dashicons dashicons-admin-users" style="font-size: 60px; height: 60px; width: 60px; color: #0f75bc;"></span>
+							<?php if(get_field('uitgelichte_afbeelding') ): ?>
+								<img src="<?php the_field('uitgelichte_afbeelding'); ?>" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+							<?php else: ?>
+								<span class="dashicons dashicons-admin-users" style="font-size: 60px; height: 60px; width: 60px; color: #0f75bc;"></span>
+							<?php endif; ?>
 							<p style="margin-bottom: 0px;"><?php the_field('functie'); ?></p>
 							<h3 style="margin-top: 0px;"><?php echo get_the_title(); ?></h3>
 						</div>
