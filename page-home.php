@@ -112,9 +112,9 @@ get_header();?>
 
 						<div style=" width: 150px;">
 							<?php if(get_field('uitgelichte_afbeelding') ): ?>
-								<img src="<?php the_field('uitgelichte_afbeelding'); ?>" style="border-radius: 50%; width: 60px; height: 60px; object-fit: cover;">
+								<img src="<?php the_field('uitgelichte_afbeelding'); ?>" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
 							<?php else: ?>
-								<span class="dashicons dashicons-admin-users" style="font-size: 60px; height: 60px; width: 60px; color: #0f75bc;"></span>
+								<span class="dashicons dashicons-admin-users" style="font-size: 60px; height: 60px; width: 60px; padding: 20px; color: #0f75bc;"></span>
 							<?php endif; ?>
 							<p style="margin-bottom: 0px;"><?php the_field('functie'); ?></p>
 							<h3 style="margin-top: 0px;"><?php echo get_the_title(); ?></h3>
