@@ -64,7 +64,9 @@ get_header();?>
 				if ($custom_query->have_posts()) :
 					while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
-						<?php include "parts/item-container-news.php" ?>
+						<?php if(get_field('on_homepage') == true) {
+							include "parts/item-container-news.php" 
+						} ?>
 
 					<?php
 					endwhile;
