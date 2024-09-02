@@ -57,6 +57,7 @@ get_header();?>
 				<?php
 				$custom_query = new WP_Query(array(
 					'post_type' => 'agendapunten',
+					'posts_per_page' => 20,
 					'order' => 'DESC'
 				));
 
